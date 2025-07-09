@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { supabase } from '../lib/supabase';
@@ -7,6 +7,11 @@ import { products } from '../data/products';
 const ProductDetailPage = () => {
   const { productId } = useParams();
   const product = products.find(p => p.id === productId);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const [selectedOptions, setSelectedOptions] = useState({
     size: '',
     color: '',

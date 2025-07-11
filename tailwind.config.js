@@ -11,6 +11,11 @@ export default {
           DEFAULT: '#FB7392',
           light: '#FFF5F7',
         },
+        softpink: {
+          light: '#FFF0F3',
+          DEFAULT: '#FFB5C7',
+          dark: '#FF8FA8'
+        },
         secondary: '#4A5568',
         background: '#FFFFFF',
         text: '#1A202C',
@@ -33,8 +38,10 @@ export default {
         }
       },
       fontFamily: {
+        sans: ['Pretendard', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'sans-serif'],
         display: ['Playfair Display', 'serif'],
-        body: ['Lora', 'serif'],
+        body: ['Pretendard', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'sans-serif'],
+        elegant: ['Cormorant Garamond', 'serif'],
       },
     },
   },

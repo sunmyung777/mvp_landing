@@ -95,7 +95,7 @@ const ProductDetailPage = () => {
   }
 
   return (
-    <div className="min-h-screen pt-16 pb-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen pt-20 pb-12 px-4 sm:px-6 lg:px-8 ">
       <div className="max-w-7xl mx-auto">
         <div className="lg:grid lg:grid-cols-2 lg:gap-x-8">
           {/* 제품 이미지 */}

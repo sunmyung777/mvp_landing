@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-gradient-to-br from-[#FFF5F8] to-[#FFFDFD]">
+    <section id="about" className="py-20 bg-white">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -12,7 +12,7 @@ const About = () => {
           className="text-center mb-16"
         >
           <h2 className="font-display text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            <span className="text-[#FF1493]">About</span> Re:joice
+            About Re:joice
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
             우리의 일상 속에서 하나님을 경험하는 방법을 제안합니다
@@ -45,7 +45,7 @@ const About = () => {
               transition={{ duration: 0.8 }}
               className="w-full md:w-1/2 space-y-6"
             >
-              <h3 className="text-3xl font-bold text-gray-900 mb-4"><span className="text-[#FF1493] font-elegant italic ">Mission</span> 일상과 신앙의 통합</h3>
+              <h3 className="text-3xl font-bold text-gray-900 mb-4">Mission: 일상과 신앙의 통합</h3>
               <div className="space-y-4">
                 <div>
                   <h4 className="font-bold text-gray-800 mb-2">버거운 일상</h4>
@@ -97,7 +97,7 @@ const About = () => {
               transition={{ duration: 0.8 }}
               className="w-full md:w-1/2 md:order-1"
             >
-              <h3 className="text-3xl font-bold text-gray-900 mb-4"><span className="text-[#FF1493] font-elegant italic ">Goal</span> 나의 하루가 곧 예배가 되는 삶</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Goal: 나의 하루가 곧 예배가 되는 삶</h3>
               <p className="text-gray-600 leading-relaxed space-y-2">
                 세련된 감성 속에 믿음을 담다,<br/>
                 Re:joice는 신앙이 부끄럽지 않고 자랑스러울 수 있도록,<br/>

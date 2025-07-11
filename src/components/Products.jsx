@@ -7,10 +7,10 @@ const Products = () => {
   const featuredProducts = products.slice(0, 3);
 
   return (
-    <section id="products" className="py-20 bg-white">
+    <section id="products" className="py-20 bg-gradient-to-br from-[#FFF5F8] to-[#FFFDFD]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Featured Products</h2>
+          <h2 className="font-display text-4xl md:text-5xl font-bold text-gray-900 mb-4">Featured <span className="text-[#FF1493]">Products</span></h2>
           <p className="text-lg text-gray-600">믿음의 메시지를 담은 특별한 제품들</p>
         </div>
 
@@ -44,7 +44,7 @@ const Products = () => {
         <div className="text-center mt-12">
           <Link
             to="/products"
-            className="inline-block bg-black text-white px-8 py-3 rounded-md hover:bg-gray-800 transition duration-300"
+            className="inline-block bg-black text-white px-8 py-3 rounded-md hover:bg-[#FF1493] transition duration-300"
           >
             모든 제품 보기
           </Link>

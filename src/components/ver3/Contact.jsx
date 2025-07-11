@@ -53,7 +53,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-[#FFF5F8] to-[#FFFDFD]">
+    <section id="contact" className="py-20 bg-white">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -65,7 +65,7 @@ const Contact = () => {
           <h2 className="font-display text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Contact Us
           </h2>
-          <p className="font-elegant italic text-gray-600 text-xl max-w-2xl mx-auto">
+          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
             Re:joice와 함께 하고 싶으신가요? 언제든 연락주세요
           </p>
         </motion.div>
@@ -86,13 +86,13 @@ const Contact = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: 0.3 }}
               >
-                <label className="block text-gray-900 font-elegant italic text-lg mb-2">이름</label>
+                <label className="block text-gray-900 font-medium mb-2">이름</label>
                 <input
                   type="text"
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-lg border border-gray-200 bg-white/70 focus:border-[#FF1493] focus:ring-1 focus:ring-[#FF1493] transition duration-300 placeholder-gray-400 font-elegant italic"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-gray-900 focus:ring-1 focus:ring-gray-900 transition duration-300"
                   placeholder="홍길동"
                   required
                 />
@@ -103,13 +103,13 @@ const Contact = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: 0.3 }}
               >
-                <label className="block text-gray-900 font-elegant italic text-lg mb-2">이메일</label>
+                <label className="block text-gray-900 font-medium mb-2">이메일</label>
                 <input
                   type="email"
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-lg border border-gray-200 bg-white/70 focus:border-[#FF1493] focus:ring-1 focus:ring-[#FF1493] transition duration-300 placeholder-gray-400 font-elegant italic"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-gray-900 focus:ring-1 focus:ring-gray-900 transition duration-300"
                   placeholder="your@email.com"
                   required
                 />
@@ -122,12 +122,12 @@ const Contact = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              <label className="block text-gray-900 font-elegant italic text-lg mb-2">메시지</label>
+              <label className="block text-gray-900 font-medium mb-2">메시지</label>
               <textarea
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                className="w-full px-4 py-3 rounded-lg border border-gray-200 bg-white/70 focus:border-[#FF1493] focus:ring-1 focus:ring-[#FF1493] transition duration-300 h-32 placeholder-gray-400 font-elegant italic"
+                className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-gray-900 focus:ring-1 focus:ring-gray-900 transition duration-300 h-32"
                 placeholder="문의하실 내용을 입력해주세요"
                 required
               ></textarea>
@@ -143,10 +143,11 @@ const Contact = () => {
               <motion.button
                 type="submit"
                 disabled={isSubmitting}
+                whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="inline-block bg-black text-white px-8 py-3 rounded-md hover:bg-[#FF1493] transition duration-300"
+                className="bg-gray-900 text-white px-8 py-3 rounded-full hover:bg-gray-800 transition duration-300 disabled:opacity-50"
               >
-                {isSubmitting ? "전송 중..." : "이메일 보내기"}
+                {isSubmitting ? "전송 중..." : "Send Email"}
               </motion.button>
             </motion.div>
           </motion.form>
@@ -158,13 +159,13 @@ const Contact = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="mt-16 text-center"
           >
-            <h3 className="font-display italic text-2xl font-bold text-gray-900 mb-4">다른 방법으로 연락하기</h3>
+            <h3 className="text-xl font-bold text-gray-900 mb-4">다른 방법으로 연락하기</h3>
             <div className="flex justify-center gap-6">
               <motion.a
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 href="mailto:formindsinone@gmail.com"
-                className="font-elegant italic text-lg text-gray-600 hover:text-gray-900"
+                className="text-gray-600 hover:text-gray-900"
               >
                 Email
               </motion.a>
@@ -172,17 +173,17 @@ const Contact = () => {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 href="https://instagram.com/yonmed_run"
-                className="font-elegant italic text-lg text-gray-600 hover:text-gray-900"
+                className="text-gray-600 hover:text-gray-900"
               >
                 Instagram
               </motion.a>
               <motion.a
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-                href="https://www.youtube.com/@yonmed_run"
-                className="font-elegant italic text-lg text-gray-600 hover:text-gray-900"
+                href="https://facebook.com/rejoice"
+                className="text-gray-600 hover:text-gray-900"
               >
-                youtube
+                Facebook
               </motion.a>
             </div>
           </motion.div>

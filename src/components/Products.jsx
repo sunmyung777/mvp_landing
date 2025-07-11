@@ -29,7 +29,7 @@ const Products = () => {
                   <img
                     src={product.image}
                     alt={product.title}
-                    className="object-cover object-center w-full h-full group-hover:scale-105 transition-transform duration-300"
+                    className="object-cover object-center w-full h-full aspect-square group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
                 <div className="mt-4">

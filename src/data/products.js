@@ -1,7 +1,7 @@
 export const products = [
   {
     id: 'giftset',
-    image: "/images/giftset.jpg",
+    image: "/images/comming-soon.png",
     detailImages: [
       "/images/giftset-detail1.png"
     ],
@@ -14,11 +14,13 @@ export const products = [
   },
   {
     id: 'diary',
-    image: "/images/product2.jpg",
+    image: "/images/product3.png",
     detailImages: [
-      "/images/diary-detail1.jpg",
-      "/images/diary-detail2.jpg",
-      "/images/diary-detail3.jpg"
+      "/images/Diary Detail 1.png",
+      "/images/Diary Detail 2.png",
+      "/images/Diary Detail 3.png",
+      "/images/Diary Detail 4.png",
+      "/images/Diary Detail 5.png"
     ],
     title: "하트 기독교 다이어리",
     description: "매주의 묵상과 감사를 기록하는 프리미엄 다이어리",
@@ -29,11 +31,13 @@ export const products = [
   },
   {
     id: 'giftnote',
-    image: "/images/product3.jpg",
+    image: "/images/product2.png",
     detailImages: [
-      "/images/giftnote-detail1.jpg",
-      "/images/giftnote-detail2.jpg",
-      "/images/giftnote-detail3.jpg"
+      "/images/Note Detail 1.png",
+      "/images/Note Detail 2.png",
+      "/images/Note Detail 3.png",
+      "/images/Note Detail 4.png",
+      "/images/Note Detail 5.png"
     ],
     title: "감사 노트",
     description: "매일의 감사를 기록하는 노트",

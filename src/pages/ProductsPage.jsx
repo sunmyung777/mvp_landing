@@ -31,7 +31,7 @@ const ProductsPage = () => {
                   <img
                     src={product.image}
                     alt={product.title}
-                    className="w-full h-full object-center object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full object-center object-cover aspect-square group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
                 <div className="mt-4">

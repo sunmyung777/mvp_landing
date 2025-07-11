@@ -103,7 +103,7 @@ const ProductDetailPage = () => {
             <img
               src={product.image}
               alt={product.title}
-              className="w-full h-full object-center object-cover"
+              className="w-full h-full object-center object-cover aspect-square"
             />
           </div>
 
@@ -224,7 +224,7 @@ const ProductDetailPage = () => {
         {/* 상세 이미지 섹션 */}
         <div className="mt-16">
           <h2 className="text-2xl font-bold text-gray-900 mb-8">상세 정보</h2>
-          <div className="space-y-8">
+          <div className="space-y-0">
             {product.detailImages?.map((image, index) => (
               <motion.div
                 key={index}
@@ -232,12 +232,12 @@ const ProductDetailPage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
-                className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden"
+                className="aspect-w-16 aspect-h-9 overflow-hidden flex items-center justify-center"
               >
                 <img
                   src={image}
                   alt={`${product.title} 상세 이미지 ${index + 1}`}
-                  className="w-full h-full object-center object-cover"
+                  className="w-1/2 h-full object-center object-cover"
                 />
               </motion.div>
             ))}
